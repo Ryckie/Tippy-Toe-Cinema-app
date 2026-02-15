@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}"/>
+    <link rel="icon" th:href="@{/assets/favicon.ico}" type="image/png"/>
+    <title>Typpy-Toe Cinemas</title>
+</head>
+<body class="home d-flex flex-column">
+
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <div class="logo-container">
+            <img src="/assets/logo-branding.webp" alt="logo" class="nav-logo">
+        </div>
+        <a class="navbar-brand branding-font" href="/">Typpy-Toe Cinemas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/home">STARTPAGINA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/bioscopen">BIOSCOPEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/films">FILMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/tarieven">TARIEVEN</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Film Zoeken" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Zoek</button>
+            </form>
+        </div>
+    </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="flex-grow-1 d-flex flex-column justify-content-center">
+    <div style="flex-grow: 30;"></div>
+    <div class="w-100">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h1 class="display-4 fw-bold text-body-emphasis branding-font">Tippy-Toe Cinemas</h1>
+                    <p class="lead mb-4">Verken alle films die spelen in Typpy-Toe
+                        cinemas samen met hun afspeel momenten. Koop jouw tickets op voorhand en reserveer jouw
+                        zetel!</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="overflow-hidden movie-titles-img">
+                        <div class="container px-5"><img src="/assets/home/movie-titles_1422_1200x.webp"
+                                                         class="img-fluid rounded-3 shadow-lg mb-4"
+                                                         alt="Top Films" width="700" height="500" loading="lazy"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="flex-grow: 70;"></div>
+</main>
+
+<!-- FOOTER -->
+<footer class="d-flex justify-content-center align-items-center py-3">
+    <div class="d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+        </a>
+        <span class="mb-3 mb-md-0 text-body-secondary">© 2026 Typpy-Toe Cinemas</span>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</footer>
+</body>
+</html>

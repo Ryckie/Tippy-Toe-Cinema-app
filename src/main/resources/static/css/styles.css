@@ -1,0 +1,71 @@
+/* General Styles */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+/* Branding font */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Coiny&family=DynaPuff:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+    height: 100%;
+}
+
+.branding-font {
+    font-family: "DynaPuff", sans-serif;
+}
+
+body {
+
+    background-image: url("../assets/background-home.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+}
+
+nav, footer {
+    background-color: #cc3736;
+}
+
+.nav-logo {
+    max-height: 3rem;
+}
+
+footer {
+    padding-left: 0.5rem;
+}
+
+main p, main a {
+    font-weight: bold;
+    background: rgb(204, 55, 54);
+    backdrop-filter: blur(3px);
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+.glass-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    margin: .5rem;
+    padding: .5rem;
+    border-radius: 15px;
+}
+
+main {
+}
+
+/* Homepage Styles */
+.home {
+}
+
+@media (min-width: 992px) {
+    .home main h1, .home main h2, .home main h3, .home main h4, .home main h5, .home main h6, .home main p, .home main a {
+        background: none;
+        backdrop-filter: none;
+    }
+}
+
+.movie-titles-img {
+    max-height: 30vh;
+}
