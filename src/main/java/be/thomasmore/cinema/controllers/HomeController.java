@@ -15,4 +15,9 @@ public class HomeController {
     public String bioscopen() {
         return "bioscopen";
     }
+
+    @GetMapping({"films"})
+    public String films() {
+        return "films";
+    }
 }
