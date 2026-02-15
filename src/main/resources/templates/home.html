@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preload" as="image" href="/assets/background-home-desktop.webp" media="(min-width: 769px)">
+    <link rel="preload" as="image" href="/assets/background-home-mobile.webp" media="(max-width: 768px)">
+    <link rel="preload" as="image" href="/assets/logo-branding.webp">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}"/>
@@ -57,9 +60,10 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="overflow-hidden movie-titles-img">
-                        <div class="container px-5"><img src="/assets/home/movie-titles_1422_1200x.webp"
+                        <div class="container px-5"><img src="/assets/home/movie-titles-optimized.webp"
                                                          class="img-fluid rounded-3 shadow-lg mb-4"
-                                                         alt="Top Films" width="700" height="500" loading="lazy"></div>
+                                                         alt="Top Films" width="700" height="500" loading="lazy"
+                                                         style="max-width: 100%; height: auto;"></div>
                     </div>
                 </div>
             </div>

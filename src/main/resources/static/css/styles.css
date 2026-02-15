@@ -23,7 +23,7 @@ body {
             to top,
             rgba(0, 0, 0, 0.9) 0%, /* Very dark at bottom */ rgba(0, 0, 0, 0.4) 50%, /* Semi-transparent in middle */ rgba(0, 0, 0, 0.9) 100% /* Very dark at top */
     ),
-    url("../assets/background-home.webp");
+    url("../assets/background-home-desktop.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -31,6 +31,16 @@ body {
     min-height: 100vh;
     margin: 0;
     color: white;
+}
+
+@media (max-width: 768px) {
+    body {
+        background-image: linear-gradient(
+                to top,
+                rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 50%, rgba(0, 0, 0, 0.9) 100%
+        ),
+        url("../assets/background-home-mobile.webp");
+    }
 }
 
 .nav-link {
