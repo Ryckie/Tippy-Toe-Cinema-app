@@ -79,6 +79,97 @@ footer {
     font-weight: bold
 }
 
-.movie-titles-img {
-    max-height: 30vh;
+/* Movie Card Styles */
+.movie-card {
+    background-color: rgba(30, 27, 38, 0.9);
+    border: 1px solid #7a1d1b;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5) !important;
+}
+
+.movie-card .card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-color: rgba(30, 27, 38, 0.95);
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+    opacity: 0;
+    transform: translateY(100%);
+    z-index: 2;
+    overflow-y: auto;
+    padding: 1.25rem;
+    scrollbar-width: thin;
+    scrollbar-color: var(--bs-warning-color) rgba(0, 0, 0, 0.2);
+}
+
+.movie-card .card-body::-webkit-scrollbar {
+    width: 6px;
+}
+
+.movie-card .card-body::-webkit-scrollbar-thumb {
+    background-color: var(--bs-warning-color);
+    border-radius: 10px;
+}
+
+.movie-card .card-title {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+}
+
+.movie-card .badge {
+    font-size: 0.75rem;
+    margin-left: 0.5rem;
+}
+
+.movie-card .card-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem !important;
+}
+
+.movie-card .card-text {
+    font-size: 0.85rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem !important;
+}
+
+.movie-card hr {
+    margin: 0.75rem 0;
+}
+
+.movie-card:hover .card-body {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.movie-card-img {
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.movie-info-bottom {
+    font-size: 0.8rem;
+    color: #e7e7e7;
+    margin-bottom: 0.5rem !important;
+}
+
+.movie-card .btn {
+    padding: 0.4rem 0.75rem;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.movie-info-bottom strong {
+    color: #ffc107;
 }
