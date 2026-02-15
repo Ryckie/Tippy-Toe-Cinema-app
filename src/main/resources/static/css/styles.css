@@ -16,8 +16,7 @@ body {
             to top,
             rgba(0, 0, 0, 0.9) 0%, /* Very dark at bottom */ rgba(0, 0, 0, 0.4) 50%, /* Semi-transparent in middle */ rgba(0, 0, 0, 0.9) 100% /* Very dark at top */
     ),
-    url("../assets/background-home.jpg");
-
+    url("../assets/background-home.webp");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
