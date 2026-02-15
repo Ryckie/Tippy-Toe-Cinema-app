@@ -12,14 +12,19 @@ html {
 }
 
 body {
+    background-image: linear-gradient(
+            to top,
+            rgba(0, 0, 0, 0.9) 0%, /* Very dark at bottom */ rgba(0, 0, 0, 0.4) 50%, /* Semi-transparent in middle */ rgba(0, 0, 0, 0.9) 100% /* Very dark at top */
+    ),
+    url("../assets/background-home.jpg");
 
-    background-image: url("../assets/background-home.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     min-height: 100vh;
     margin: 0;
+    color: white;
 }
 
 nav, footer {
@@ -32,38 +37,6 @@ nav, footer {
 
 footer {
     padding-left: 0.5rem;
-}
-
-main p, main a {
-    font-weight: bold;
-    background: rgb(204, 55, 54);
-    backdrop-filter: blur(3px);
-    margin: .5rem;
-    padding: .5rem;
-    border-radius: 15px;
-    display: inline-block;
-}
-
-.glass-box {
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(10px);
-    margin: .5rem;
-    padding: .5rem;
-    border-radius: 15px;
-}
-
-main {
-}
-
-/* Homepage Styles */
-.home {
-}
-
-@media (min-width: 992px) {
-    .home main h1, .home main h2, .home main h3, .home main h4, .home main h5, .home main h6, .home main p, .home main a {
-        background: none;
-        backdrop-filter: none;
-    }
 }
 
 .movie-titles-img {
