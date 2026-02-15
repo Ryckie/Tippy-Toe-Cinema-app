@@ -20,4 +20,9 @@ public class HomeController {
     public String films() {
         return "films";
     }
+
+    @GetMapping({"tarieven"})
+    public String tarieven() {
+        return "tarieven";
+    }
 }
