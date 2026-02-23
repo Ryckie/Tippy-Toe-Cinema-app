@@ -33,6 +33,10 @@ body {
     color: white;
 }
 
+.bioscoop-card {
+    background-color: rgba(30, 27, 38, 0.9);
+}
+
 @media (max-width: 768px) {
     body {
         background-image: linear-gradient(
