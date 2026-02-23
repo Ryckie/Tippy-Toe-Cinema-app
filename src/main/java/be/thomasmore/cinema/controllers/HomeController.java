@@ -9,16 +9,13 @@ public class HomeController {
 
     @GetMapping({"/", "home"})
     public String home(Model model) {
-        return "home";
-    }
 
-    @GetMapping({"bioscopen"})
-    public String bioscopen(Model model) {
-        return "bioscopen";
+        return "home";
     }
 
     @GetMapping({"tarieven"})
     public String tarieven(Model model) {
+
         return "tarieven";
     }
 }

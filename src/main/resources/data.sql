@@ -76,3 +76,22 @@ VALUES (100, 1994, 'Drama', 'C',
         'The Shawshank Redemption',
         '/assets/posters/the-shawshank-redemption.webp',
         'https://www.youtube.com/watch?v=rNKKgsuIZC8');
+
+-- CINEMAS TABEL
+INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
+VALUES ('Groenendaallaan 394', 'Antwerpen', 'Tippy-Toe Antwerpen', 'Maandag', '13', '22');
+
+INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
+VALUES ('Eeuwfeestlaan 20', 'Brussel', 'Tippy-Toe Brussel', 'Dinsdag', '12', '22');
+
+INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
+VALUES ('Ter Platen 12', 'Gent', 'Tippy-Toe Gent', 'Woensdag', '13', '22');
+
+INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
+VALUES ('Bondgenotenlaan 145', 'Leuven', 'Tippy-Toe Leuven', 'Donderdag', '14', '22');
+
+INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
+VALUES ('Via Media 1', 'Hasselt', 'Tippy-Toe Hasselt', 'Vrijdag', '13', '22');
+
+INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
+VALUES ('Koning Albert I-laan 200', 'Brugge', 'Tippy-Toe Brugge', 'Zaterdag', '12', '23');
