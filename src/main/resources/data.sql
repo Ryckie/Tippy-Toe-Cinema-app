@@ -79,19 +79,19 @@ VALUES (100, 1994, 'Drama', 'C',
 
 -- CINEMAS TABEL
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Groenendaallaan 394', 'Antwerpen', 'Tippy-Toe Antwerpen', 'Maandag', '13', '22');
+VALUES ('Groenendaallaan 394', 'Antwerpen', 'Tippy-Toe Antwerpen', 'maandag', '13', '22');
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Eeuwfeestlaan 20', 'Brussel', 'Tippy-Toe Brussel', 'Dinsdag', '12', '22');
+VALUES ('Eeuwfeestlaan 20', 'Brussel', 'Tippy-Toe Brussel', 'dinsdag', '12', '22');
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Ter Platen 12', 'Gent', 'Tippy-Toe Gent', 'Woensdag', '13', '22');
+VALUES ('Ter Platen 12', 'Gent', 'Tippy-Toe Gent', 'woensdag', '13', '22');
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Bondgenotenlaan 145', 'Leuven', 'Tippy-Toe Leuven', 'Donderdag', '14', '22');
+VALUES ('Bondgenotenlaan 145', 'Leuven', 'Tippy-Toe Leuven', 'donderdag', '14', '22');
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Via Media 1', 'Hasselt', 'Tippy-Toe Hasselt', 'Vrijdag', '13', '22');
+VALUES ('Via Media 1', 'Hasselt', 'Tippy-Toe Hasselt', 'vrijdag', '13', '22');
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Koning Albert I-laan 200', 'Brugge', 'Tippy-Toe Brugge', 'Zaterdag', '12', '23');
+VALUES ('Koning Albert I-laan 200', 'Brugge', 'Tippy-Toe Brugge', 'zaterdag', '12', '23');

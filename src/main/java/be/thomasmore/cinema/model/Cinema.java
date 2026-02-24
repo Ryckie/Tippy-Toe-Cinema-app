@@ -5,6 +5,10 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 
+import java.time.LocalDateTime;
+import java.time.format.TextStyle;
+import java.util.Locale;
+
 @Entity
 public class Cinema {
     @Id
@@ -17,6 +21,16 @@ public class Cinema {
     private int openingHour;
     private int closingHour;
     private String closingDay;
+
+    public boolean cinemaOpen() {
+        LocalDateTime now = LocalDateTime.now();
+        int currentHour = now.getHour();
+        String currentDay = now.getDayOfWeek().getDisplayName(TextStyle.FULL, new Locale("nl", "BE")); // takes the currentday in the dutch locale variant
+        if (currentHour >= openingHour && currentHour < closingHour && !currentDay.equals(closingDay)) {
+            return true;
+        }
+        return false;
+    }
 
     //    Getters and Setters
     public Integer getId() {

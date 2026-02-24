@@ -30,6 +30,13 @@
                         </p>
                     </div>
                     <div class="mt-auto">
+                        <span th:if="${cinema.cinemaOpen()}"
+                              class="card text-bg-success my-3 fw-bold text-center">OPEN
+                        </span>
+                        <span
+                                th:unless="${cinema.cinemaOpen()}"
+                                class="card text-bg-danger my-3 fw-bold text-center">GESLOTEN
+                        </span>
                         <a th:href="@{/bioscopen}" class="btn btn-outline-warning w-100">Terug naar overzicht</a>
                     </div>
                 </div>
