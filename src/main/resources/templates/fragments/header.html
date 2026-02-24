@@ -1,0 +1,48 @@
+<!-- head element - homepage has an excemption for this -->
+<head th:fragment="headerelement">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/styles.css}"/>
+    <link rel="icon" th:href="@{/assets/favicon.ico}" type="image/png"/>
+    <title>Tippy-Toe Cinemas</title>
+</head>
+
+
+<!-- navbar element-->
+<nav class="navbar navbar-expand-lg" th:fragment="navbar">
+    <div class="container-fluid">
+        <div class="logo-container">
+            <img src="/assets/logo-branding.webp" alt="logo" class="nav-logo">
+        </div>
+        <a class="navbar-brand branding-font" href="/">Tippy-Toe Cinemas</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" th:classappend="${currentUrl == '/home' ? 'active' : ''}" aria-current="page"
+                       href="/home">STARTPAGINA</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:class="|nav-link ${currentUrl.contains('biosco') ? 'active' : ''}|"
+                       href="/bioscopen">BIOSCOPEN</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:classappend="${currentUrl == '/films' ? 'active' : ''}"
+                       href="/films">FILMS</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" th:classappend="${currentUrl == '/tarieven' ? 'active' : ''}" href="/tarieven">TARIEVEN</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Film Zoeken" aria-label="Search">
+                <button class="btn btn-outline-warning" type="submit">Zoek</button>
+            </form>
+        </div>
+    </div>
+</nav>
