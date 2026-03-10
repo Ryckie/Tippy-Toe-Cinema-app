@@ -6,6 +6,101 @@
 <nav th:replace="~{fragments/header :: navbar}"></nav>
 
 <main class="container my-5 flex-grow-1">
+
+    <button type="button" class="btn btn-warning mb-4" data-bs-toggle="modal" data-bs-target="#filterModal">
+        <i class="bi bi-funnel"></i> Filters
+    </button>
+
+    <div class="modal fade" id="filterModal" tabindex="-1" aria-labelledby="filterModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <form th:action="@{/films}">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="filterModalLabel">Zoek je perfecte film</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body mx-2">
+
+                        <div class="row border rounded mt-3 p-2">
+                            <div class="col-12 p-1">
+                                <label class="form-label">Film titel bevat:</label>
+                                <input type="text" name="movieName" class="form-control" th:value="${param.movieName}">
+                            </div>
+                        </div>
+
+                        <div class="row border rounded mt-3 p-2">
+                            <div class="col-6 p-1">
+                                <label class="form-label">Uitgekomen vanaf</label>
+                                <input type="number" name="minReleaseYear" class="form-control"
+                                       th:value="${param.minReleaseYear}">
+                            </div>
+                            <div class="col-6 p-1">
+                                <label class="form-label">Tot en met</label>
+                                <input type="number" name="maxReleaseYear" class="form-control"
+                                       th:value="${param.maxReleaseYear}">
+                            </div>
+                        </div>
+
+                        <div class="row border rounded mt-3 p-2">
+                            <div class="col-12 p-1">
+                                <label class="form-label">Min. aantal vrije plaatsen</label>
+                                <input type="number" name="minFreeSeats" class="form-control"
+                                       th:value="${param.minFreeSeats}">
+                            </div>
+                        </div>
+
+                        <div class="row border rounded mt-3 p-2">
+                            <div class="col-12 p-1">
+                                <h5>Genre</h5>
+                            </div>
+                            <div class="col-6 p-1">
+                                <div class="form-check">
+                                    <input type="radio" name="genre" value="" id="genreAny"
+                                           class="form-check-input mt-0"
+                                           th:checked="${param.genre == null or param.genre[0] == ''}">
+                                    <label class="form-check-label" for="genreAny">Maakt niet uit</label>
+                                </div>
+                            </div>
+                            <div class="col-6 p-1">
+                                <div class="form-check">
+                                    <input type="radio" name="genre" value="Action" id="genreAction"
+                                           class="form-check-input mt-0"
+                                           th:checked="${param.genre != null and param.genre[0] == 'Action'}">
+                                    <label class="form-check-label" for="genreAction">Actie</label>
+                                </div>
+                            </div>
+                            <div class="col-6 p-1">
+                                <div class="form-check">
+                                    <input type="radio" name="genre" value="Drama" id="genreDrama"
+                                           class="form-check-input mt-0"
+                                           th:checked="${param.genre != null and param.genre[0] == 'Drama'}">
+                                    <label class="form-check-label" for="genreDrama">Drama</label>
+                                </div>
+                            </div>
+                            <div class="col-6 p-1">
+                                <div class="form-check">
+                                    <input type="radio" name="genre" value="Sci-Fi" id="genreSciFi"
+                                           class="form-check-input mt-0"
+                                           th:checked="${param.genre != null and param.genre[0] == 'Sci-Fi'}">
+                                    <label class="form-check-label" for="genreSciFi">Sci-Fi</label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="submit" class="btn btn-warning">Zoek</button>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+    </div>
+
+
     <div class="row row-cols-2 row-cols-md-3 row-cols-lg-5 g-3">
         <div th:each="movie : ${movies}" class="col">
             <div class="card h-100 movie-card shadow">

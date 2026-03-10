@@ -18,8 +18,8 @@ public class Cinema {
     private String cinemaName;
     private String address;
     private String city;
-    private int openingHour;
-    private int closingHour;
+    private Integer openingHour;
+    private Integer closingHour;
     private String closingDay;
 
     public boolean cinemaOpen() {

@@ -13,8 +13,8 @@ public class Movie {
 
     private String movieName;
     private String hallName;
-    private int numberOfFreeSeats;
-    private int releaseYear;
+    private Integer numberOfFreeSeats;
+    private Integer releaseYear;
     private String genre;
     private String movieDescription;
     private String posterUrl;
