@@ -1,6 +1,7 @@
+-- MOVIE TABEL
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (250, 2024, 'Action/Comedy', 'B',
+VALUES (250, 2024, 'Action/Comedy', 'Zaal B',
         'Deadpool krijgt een plaats aangeboden in het Marvel Cinematic Universe door de Time Variance Authority, maar werft in plaats daarvan een variant van Wolverine aan om zijn universum te redden van uitsterven.',
         'Deadpool & Wolverine',
         '/assets/posters/deadpool-wolverine.webp',
@@ -8,7 +9,7 @@ VALUES (250, 2024, 'Action/Comedy', 'B',
 
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (150, 2014, 'Adventure, Drama, Sci-Fi', 'A',
+VALUES (150, 2014, 'Adventure, Drama, Sci-Fi', 'Zaal A',
         'When Earth becomes uninhabitable, a farmer and ex-NASA pilot, Joseph Cooper, is tasked to pilot a spacecraft, along with a team of researchers, to find a new planet for humans.',
         'Interstellar',
         '/assets/posters/interstellar.webp',
@@ -16,7 +17,7 @@ VALUES (150, 2014, 'Adventure, Drama, Sci-Fi', 'A',
 
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (200, 2008, 'Action, Crime, Drama', 'C',
+VALUES (200, 2008, 'Action, Crime, Drama', 'Zaal C',
         'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.',
         'The Dark Knight',
         '/assets/posters/the-dark-knight.webp',
@@ -24,14 +25,14 @@ VALUES (200, 2008, 'Action, Crime, Drama', 'C',
 
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (180, 2010, 'Action, Adventure, Sci-Fi', 'A',
+VALUES (180, 2010, 'Action, Adventure, Sci-Fi', 'Zaal A',
         'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.',
         'Inception', '/assets/posters/inception.webp',
         'https://www.youtube.com/watch?v=YoHD9XEInc0');
 
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (120, 2023, 'Biography, Drama, History', 'B',
+VALUES (120, 2023, 'Biography, Drama, History', 'Zaal B',
         'The story of American scientist, J. Robert Oppenheimer, and his role in the development of the atomic bomb.',
         'Oppenheimer',
         '/assets/posters/oppenheimer.webp',
@@ -39,7 +40,7 @@ VALUES (120, 2023, 'Biography, Drama, History', 'B',
 
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (180, 1999, 'Action, Sci-Fi', 'A',
+VALUES (180, 1999, 'Action, Sci-Fi', 'Zaal A',
         'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.',
         'The Matrix',
         '/assets/posters/the-matrix.webp',
@@ -47,7 +48,7 @@ VALUES (180, 1999, 'Action, Sci-Fi', 'A',
 
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (140, 1994, 'Crime, Drama', 'C',
+VALUES (140, 1994, 'Crime, Drama', 'Zaal C',
         'The lives of two mob hit men, a boxer, a gangster''s wife, and a pair of diner bandits intertwine in four tales of violence and redemption.',
         'Pulp Fiction',
         '/assets/posters/pulp-fiction.webp',
@@ -55,7 +56,7 @@ VALUES (140, 1994, 'Crime, Drama', 'C',
 
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (220, 2023, 'Animation, Action, Adventure', 'B',
+VALUES (220, 2023, 'Animation, Action, Adventure', 'Zaal B',
         'Miles Morales catapults across the Multiverse, where he encounters a team of Spider-People charged with protecting its very existence.',
         'Spider-Man: Across the Spider-Verse',
         '/assets/posters/spider-man-across-the-spider-verse.webp',
@@ -63,7 +64,7 @@ VALUES (220, 2023, 'Animation, Action, Adventure', 'B',
 
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (280, 2024, 'Action, Adventure, Sci-Fi', 'A',
+VALUES (280, 2024, 'Action, Adventure, Sci-Fi', 'Zaal A',
         'Paul Atreides unites with Chani and the Fremen while seeking revenge against the conspirators who destroyed his family.',
         'Dune: Part Two',
         '/assets/posters/dune-part-two.webp',
@@ -71,7 +72,7 @@ VALUES (280, 2024, 'Action, Adventure, Sci-Fi', 'A',
 
 INSERT INTO MOVIE (NUMBER_OF_FREE_SEATS, RELEASE_YEAR, GENRE, HALL_NAME, MOVIE_DESCRIPTION, MOVIE_NAME, POSTER_URL,
                    TRAILER_URL)
-VALUES (100, 1994, 'Drama', 'C',
+VALUES (100, 1994, 'Drama', 'Zaal C',
         'Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.',
         'The Shawshank Redemption',
         '/assets/posters/the-shawshank-redemption.webp',
@@ -79,19 +80,19 @@ VALUES (100, 1994, 'Drama', 'C',
 
 -- CINEMAS TABEL
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Groenendaallaan 394', 'Antwerpen', 'Tippy-Toe Antwerpen', 'maandag', '13', '22');
+VALUES ('Groenendaallaan 394', 'Antwerpen', 'Tippy-Toe Antwerpen', 'maandag', 13, 22);
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Eeuwfeestlaan 20', 'Brussel', 'Tippy-Toe Brussel', 'dinsdag', '12', '22');
+VALUES ('Eeuwfeestlaan 20', 'Brussel', 'Tippy-Toe Brussel', 'dinsdag', 12, 22);
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Ter Platen 12', 'Gent', 'Tippy-Toe Gent', 'woensdag', '13', '22');
+VALUES ('Ter Platen 12', 'Gent', 'Tippy-Toe Gent', 'woensdag', 13, 22);
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Bondgenotenlaan 145', 'Leuven', 'Tippy-Toe Leuven', 'donderdag', '14', '22');
+VALUES ('Bondgenotenlaan 145', 'Leuven', 'Tippy-Toe Leuven', 'donderdag', 14, 22);
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Via Media 1', 'Hasselt', 'Tippy-Toe Hasselt', 'vrijdag', '13', '22');
+VALUES ('Via Media 1', 'Hasselt', 'Tippy-Toe Hasselt', 'vrijdag', 13, 22);
 
 INSERT INTO CINEMA (ADDRESS, CITY, CINEMA_NAME, CLOSING_DAY, OPENING_HOUR, CLOSING_HOUR)
-VALUES ('Koning Albert I-laan 200', 'Brugge', 'Tippy-Toe Brugge', 'zaterdag', '12', '23');
+VALUES ('Koning Albert I-laan 200', 'Brugge', 'Tippy-Toe Brugge', 'zaterdag', 12, 23);

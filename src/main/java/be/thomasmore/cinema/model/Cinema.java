@@ -1,12 +1,10 @@
 package be.thomasmore.cinema.model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 
 import java.time.LocalDateTime;
 import java.time.format.TextStyle;
+import java.util.Collection;
 import java.util.Locale;
 
 @Entity
@@ -32,7 +30,19 @@ public class Cinema {
         return false;
     }
 
+    @OneToMany(mappedBy = "cinema", fetch = FetchType.LAZY)
+    private Collection<Room> rooms;
+
     //    Getters and Setters
+
+    public void setOpeningHour(Integer openingHour) {
+        this.openingHour = openingHour;
+    }
+
+    public void setClosingHour(Integer closingHour) {
+        this.closingHour = closingHour;
+    }
+
     public Integer getId() {
         return id;
     }
@@ -87,5 +97,13 @@ public class Cinema {
 
     public void setClosingDay(String closingDay) {
         this.closingDay = closingDay;
+    }
+
+    public Collection<Room> getRooms() {
+        return rooms;
+    }
+
+    public void setRooms(Collection<Room> rooms) {
+        this.rooms = rooms;
     }
 }
